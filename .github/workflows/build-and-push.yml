@@ -34,7 +34,6 @@ jobs:
             {{major}}
       - name: Build and push the branch image
         uses: docker/build-push-action@v2
-        if: startsWith(github.ref, 'refs/heads/')
         with:
           context: .
           file: ./Dockerfile
