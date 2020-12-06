@@ -50,7 +50,7 @@ RUN apt-get update \
   && rm -rf /build
 
 FROM golang:1 as build-webhook
-ARG WEBHOOK_RELEASE="2.7.0"
+ARG WEBHOOK_RELEASE="2.8.0"
 ARG LAMINAR_TARBALL="https://github.com/adnanh/webhook/archive/$WEBHOOK_RELEASE.tar.gz"
 RUN apt-get update \
   && mkdir -p /build /output/usr/local/bin \
